@@ -1,0 +1,109 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  height: 80%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+#btn1 {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#btn1:hover {
+  background-color: lightgrey;
+  border-color: lightgrey;
+}
+
+.btn:hover {
+  color: black; /* Text color (usually white) */
+  background-color: white; /* Background color (blue in this example) */
+  border-color: white; /* Border color (matching the background color) */
+}
+
+.flex-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top: 10px;
+}
+
+.logo {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+#chihuahua:hover {
+  background-color: black;
+  color: white;
+}
+
+#labrador:hover {
+  background-color: #4f4f4f;
+  color: white;
+}
+
+#mastiff:hover {
+  background-color: #4f4f4f;
+  color: white;
+}
+
+#color-top {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 1250px) {
+  .logo {
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+}
+
+@media (max-width: 991px) {
+  #color-top {
+    padding-bottom: 0px;
+  }
+
+  #top-text {
+    padding-top: 0px;
+  }
+
+  #dog-text {
+    padding-top: 95px
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
